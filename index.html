@@ -17,10 +17,7 @@
         height: 300px;
         overflow: auto;
       }   
-	.dropdown-backdrop {
-    	position: static;
-	}
-
+	
     </style>
   </head>
 <body>
@@ -44,5 +41,9 @@
             <input class="form-control" id="message" placeholder="メッセージを送信...">
     </div>
   </div>
+
+<script>
+$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+</script>
 </body>
 </html>
